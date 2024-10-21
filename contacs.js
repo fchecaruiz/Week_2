@@ -1,17 +1,13 @@
 class Contact{
 
-    constructor(){
-   this.array_objetos = ["futbol","baloncesto"];
+   constructor(){
+   this.array_objetos = [];
 }
 printPersons(){
 this.array_objetos.forEach((valor) => {
-   console.log (valor)}
-)
-
+valor.printAll()
+valor.printHobbies()})
 }
 }
-
-let persona2 = new Contact();
-persona2.printPersons();
 
 module.exports = {Contact};
